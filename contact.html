@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Healing Minds Counseling. Schedule an appointment, call, email, or visit our office.">
+    <title>Contact Us - Healing Minds Counseling</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Crisis Banner -->
+    <div class="crisis-banner">
+        In Crisis? Call <a href="tel:988">988</a> - 24/7 Support
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="logo">
+                <div>
+                    <div class="logo-text">Healing Minds</div>
+                    <div class="logo-tagline">Healing Minds, Building Hope</div>
+                </div>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="therapists.html">Therapists</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="tel:(555)123-4567" class="nav-phone">(555) 123-4567</a></li>
+                <li><a href="contact.html" class="btn">Book Appointment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We're Here to Help</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📞</div>
+                    <h3 class="card-title">Call Us</h3>
+                    <p style="font-size: 1.3rem; font-weight: bold; color: var(--primary); margin: 1rem 0;">
+                        <a href="tel:(555)123-4567">(555) 123-4567</a>
+                    </p>
+                    <p><strong>Hours Available:</strong></p>
+                    <p>Monday-Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                    <a href="tel:(555)123-4567" class="btn mt-2">Call Now</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✉️</div>
+                    <h3 class="card-title">Email Us</h3>
+                    <p style="font-size: 1.1rem; margin: 1rem 0;">
+                        <a href="mailto:info@healingminds.com">info@healingminds.com</a>
+                    </p>
+                    <p><strong>Response Time:</strong></p>
+                    <p>We typically respond within 24 business hours</p>
+                    <a href="mailto:info@healingminds.com" class="btn mt-2">Send Email</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📍</div>
+                    <h3 class="card-title">Visit Us</h3>
+                    <p style="margin: 1rem 0;">
+                        123 Wellness Street<br>City, State 12345<br>Suite 200
+                    </p>
+                    <p><strong>Office Hours:</strong></p>
+                    <p>Monday-Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                    <a href="#map" class="btn mt-2">Get Directions</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📅</div>
+                    <h3 class="card-title">Book Online</h3>
+                    <p>Schedule your appointment 24/7 through our online booking system.</p>
+                    <p>Choose your preferred therapist, date, and time.</p>
+                    <a href="#appointment-form" class="btn mt-2">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Request Form -->
+    <section id="appointment-form" class="section watercolor-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Request an Appointment</h2>
+            </div>
+            <div class="two-column">
+                <!-- Left: Contact Form -->
+                <div class="card">
+                    <form id="contact-form">
+                        <h3 style="margin-bottom: 1.5rem;">Your Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+                        
+                        <h3 style="margin-top: 2rem; margin-bottom: 1.5rem;">Appointment Details</h3>
+                        
+                        <div class="form-group">
+                            <label for="therapist">Preferred Therapist</label>
+                            <select id="therapist" name="therapist">
+                                <option value="">Any Available Therapist</option>
+                                <option value="sarah-johnson">Dr. Sarah Johnson</option>
+                                <option value="michael-chen">Michael Chen</option>
+                                <option value="emily-rodriguez">Dr. Emily Rodriguez</option>
+                                <option value="jennifer-williams">Jennifer Williams</option>
+                                <option value="robert-martinez">Robert Martinez</option>
+                                <option value="patricia-brown">Patricia Brown</option>
+                                <option value="amanda-lee">Dr. Amanda Lee</option>
+                                <option value="david-kim">David Kim</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="individual">Individual Therapy</option>
+                                <option value="couples">Couples Counseling</option>
+                                <option value="family">Family Therapy</option>
+                                <option value="group">Group Therapy</option>
+                                <option value="child-teen">Child & Teen Therapy</option>
+                                <option value="online">Online Counseling</option>
+                                <option value="psychiatric">Psychiatric Services</option>
+                                <option value="assessment">Assessment & Testing</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date & Time</label>
+                            <input type="datetime-local" id="preferredDate" name="preferredDate">
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="urgent" name="urgent">
+                            <label for="urgent">Is this urgent? (We'll prioritize urgent requests)</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="referral">How did you hear about us?</label>
+                            <select id="referral" name="referral">
+                                <option value="">Select one</option>
+                                <option value="search">Online Search</option>
+                                <option value="referral">Friend/Family Referral</option>
+                                <option value="insurance">Insurance Provider</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <h3 style="margin-top: 2rem; margin-bottom: 1.5rem;">Insurance Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="insurance">Insurance Provider</label>
+                            <select id="insurance" name="insurance">
+                                <option value="">Select provider</option>
+                                <option value="bcbs">Blue Cross Blue Shield</option>
+                                <option value="aetna">Aetna</option>
+                                <option value="cigna">Cigna</option>
+                                <option value="united">UnitedHealthcare</option>
+                                <option value="medicaid">Medicaid</option>
+                                <option value="medicare">Medicare</option>
+                                <option value="self-pay">Self-Pay</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="policyNumber">Policy Number (Optional)</label>
+                            <input type="text" id="policyNumber" name="policyNumber">
+                        </div>
+                        
+                        <h3 style="margin-top: 2rem; margin-bottom: 1.5rem;">Brief Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="message">What brings you here? *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Please share a brief description of what you'd like to work on in therapy..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="concerns">Any specific concerns or questions?</label>
+                            <textarea id="concerns" name="concerns" rows="3" placeholder="Optional: Share any specific concerns or questions..."></textarea>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the <a href="#privacy-policy">Privacy Policy</a> *</label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="contact-permission" name="contact-permission" required>
+                            <label for="contact-permission">I give permission to be contacted via phone and email *</label>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 1.5rem;">Submit Request</button>
+                        
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text);">
+                            We'll contact you within 24 business hours
+                        </p>
+                    </form>
+                </div>
+                
+                <!-- Right: Why Choose Us -->
+                <div>
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <h3>Why Choose Us</h3>
+                        <div style="margin-top: 1.5rem;">
+                            <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="font-size: 2rem;">✓</div>
+                                <div>
+                                    <strong>Licensed Professionals</strong>
+                                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">All our therapists are licensed and experienced</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="font-size: 2rem;">✓</div>
+                                <div>
+                                    <strong>Confidential & Secure</strong>
+                                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">HIPAA compliant, your privacy is protected</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="font-size: 2rem;">✓</div>
+                                <div>
+                                    <strong>Evidence-Based Care</strong>
+                                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Proven therapeutic approaches</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="font-size: 2rem;">✓</div>
+                                <div>
+                                    <strong>Flexible Scheduling</strong>
+                                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Evening and weekend appointments available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Testimonial</h3>
+                        <div class="stars" style="margin: 1rem 0;">★★★★★</div>
+                        <p class="testimonial-text">"The intake process was smooth and the staff was so welcoming. I felt heard and understood from the very first contact."</p>
+                        <p class="testimonial-author">— Anonymous Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Office Locations</h2>
+            </div>
+            <div class="card">
+                <div class="two-column">
+                    <div>
+                        <h3>Main Office</h3>
+                        <p style="margin: 1rem 0;">
+                            <strong>Address:</strong><br>
+                            123 Wellness Street<br>
+                            City, State 12345<br>
+                            Suite 200
+                        </p>
+                        <p style="margin: 1rem 0;">
+                            <strong>Phone:</strong> <a href="tel:(555)123-4567">(555) 123-4567</a>
+                        </p>
+                        <p style="margin: 1rem 0;">
+                            <strong>Office Hours:</strong><br>
+                            Monday-Friday: 9:00 AM - 7:00 PM<br>
+                            Saturday: 10:00 AM - 4:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                        <p style="margin: 1rem 0;">
+                            <strong>Parking:</strong> Free parking available in the lot behind the building
+                        </p>
+                        <p style="margin: 1rem 0;">
+                            <strong>Accessibility:</strong> Wheelchair accessible with ramp entrance and accessible restrooms
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=400&fit=crop" alt="Office Building" style="border-radius: 15px;" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section id="map" class="section watercolor-bg" style="padding-top: 0;">
+        <div class="container">
+            <div style="background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px var(--shadow);">
+                <div style="width: 100%; height: 400px; background: var(--accent); display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
+                        <p style="font-size: 1.1rem; color: var(--text);">Interactive Map</p>
+                        <p style="color: var(--text);">123 Wellness Street, City, State 12345</p>
+                        <a href="https://www.google.com/maps" target="_blank" class="btn mt-2">Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="accordion">
+                    <div class="accordion-header">How do I schedule an appointment?</div>
+                    <div class="accordion-content">
+                        <p>You can schedule an appointment by calling us at (555) 123-4567, filling out the appointment request form on this page, or emailing us at info@healingminds.com. We'll contact you within 24 business hours to confirm your appointment.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">What should I expect in my first session?</div>
+                    <div class="accordion-content">
+                        <p>Your first session is typically an intake/assessment session where your therapist will ask about your concerns, history, and goals. You'll discuss what to expect from therapy and begin to develop a treatment plan. It's normal to feel nervous—your therapist will help you feel comfortable.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">Do you accept my insurance?</div>
+                    <div class="accordion-content">
+                        <p>We accept most major insurance plans including Blue Cross Blue Shield, Aetna, Cigna, UnitedHealthcare, Medicaid, and Medicare. We also offer sliding scale fees for those without insurance or with high deductibles. Contact us to verify your specific insurance coverage.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">Is therapy confidential?</div>
+                    <div class="accordion-content">
+                        <p>Yes, therapy is completely confidential. Your therapist is bound by professional ethics and HIPAA regulations to protect your privacy. There are very few exceptions, such as if there's a risk of harm to yourself or others, or in cases of abuse.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">Can I choose my therapist?</div>
+                    <div class="accordion-content">
+                        <p>Yes! You can request a specific therapist when scheduling, or we can help match you with a therapist based on your needs, preferences, and availability. You can also view our therapist profiles to learn more about each provider.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">What if I need to cancel or reschedule?</div>
+                    <div class="accordion-content">
+                        <p>We require 24 hours notice for cancellations or rescheduling. If you cancel with less than 24 hours notice, you may be charged a cancellation fee. We understand emergencies happen and will work with you on a case-by-case basis.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">Do you offer evening or weekend appointments?</div>
+                    <div class="accordion-content">
+                        <p>Yes! We offer evening appointments Monday-Friday until 7:00 PM, and Saturday appointments from 10:00 AM - 4:00 PM. Some therapists also offer online sessions for added flexibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Notice -->
+    <section class="section watercolor-bg">
+        <div class="container">
+            <div class="card" style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: var(--white); border: none; text-align: center;">
+                <h2 style="color: var(--white); margin-bottom: 1rem;">⚠️ Emergency Notice</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                    <strong>This form is not for emergencies.</strong>
+                </p>
+                <p style="font-size: 1rem;">
+                    If you are in crisis, please call <a href="tel:988" style="color: var(--white); font-weight: bold; text-decoration: underline;">988</a> or go to your nearest emergency room.
+                </p>
+                <p style="font-size: 1rem; margin-top: 1rem;">
+                    For immediate help, contact:<br>
+                    National Suicide Prevention Lifeline: <a href="tel:988" style="color: var(--white); font-weight: bold;">988</a><br>
+                    Crisis Text Line: Text HOME to <a href="sms:741741" style="color: var(--white); font-weight: bold;">741741</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Policies -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Office Policies</h2>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title">Cancellation Policy</h3>
+                    <p>We require 24 hours notice for cancellations. Cancellations with less than 24 hours notice may result in a cancellation fee equal to the session fee.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Late Arrival Policy</h3>
+                    <p>If you arrive late, your session will still end at the scheduled time. If you're more than 15 minutes late, your appointment may be rescheduled.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Payment Terms</h3>
+                    <p>Payment is due at the time of service. We accept cash, check, credit cards, and HSA/FSA cards. We can also bill your insurance directly.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Confidentiality & HIPAA</h3>
+                    <p>We maintain strict confidentiality in accordance with HIPAA regulations. Your information is protected and will not be shared without your written consent, except in cases required by law.</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="#privacy-policy" class="btn btn-secondary">View Full Policies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Healing Minds Counseling is dedicated to providing compassionate, evidence-based mental health services to individuals, couples, and families in our community.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="therapists.html">Therapists</a></li>
+                    <li><a href="resources.html">FAQs</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="resources.html">Crisis Lines</a></li>
+                    <li><a href="resources.html">Support Groups</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+                <div class="crisis-resources">
+                    <h4>In Crisis?</h4>
+                    <p>National Suicide Prevention: <a href="tel:988">988</a></p>
+                    <p>Crisis Text Line: Text HOME to <a href="sms:741741">741741</a></p>
+                    <p>SAMHSA Helpline: <a href="tel:18006624357">1-800-662-4357</a></p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>123 Wellness Street<br>City, State 12345</p>
+                <p>Phone: <a href="tel:(555)123-4567">(555) 123-4567</a></p>
+                <p>Email: <a href="mailto:info@healingminds.com">info@healingminds.com</a></p>
+                <p>Hours: Mon-Fri 9am-7pm<br>Sat 10am-4pm</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healing Minds Counseling. All rights reserved. | HIPAA Compliant</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet our team of experienced, compassionate mental health professionals. Licensed therapists specializing in various areas of mental health.">
+    <title>Meet Our Therapists - Healing Minds Counseling</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Crisis Banner -->
+    <div class="crisis-banner">
+        In Crisis? Call <a href="tel:988">988</a> - 24/7 Support
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="logo">
+                <div>
+                    <div class="logo-text">Healing Minds</div>
+                    <div class="logo-tagline">Healing Minds, Building Hope</div>
+                </div>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="therapists.html" class="active">Therapists</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:(555)123-4567" class="nav-phone">(555) 123-4567</a></li>
+                <li><a href="contact.html" class="btn">Book Appointment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Meet Our Team</h1>
+            <p>Experienced, Compassionate Professionals</p>
+        </div>
+    </section>
+
+    <!-- Filter/Sort Options -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="filter-section">
+                <h3 style="margin-bottom: 1.5rem;">Find Your Therapist</h3>
+                <div class="filter-grid">
+                    <div>
+                        <label>Filter by Specialty:</label>
+                        <select class="form-group" style="width: 100%; padding: 10px; border: 2px solid var(--subtle); border-radius: 8px;">
+                            <option value="all">All Specialties</option>
+                            <option value="anxiety">Anxiety</option>
+                            <option value="depression">Depression</option>
+                            <option value="trauma">Trauma/PTSD</option>
+                            <option value="couples">Couples</option>
+                            <option value="family">Family</option>
+                            <option value="teens">Teens/Children</option>
+                            <option value="addiction">Addiction</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Filter by Gender:</label>
+                        <select class="form-group" style="width: 100%; padding: 10px; border: 2px solid var(--subtle); border-radius: 8px;">
+                            <option value="all">Any</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="non-binary">Non-Binary</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Filter by Language:</label>
+                        <select class="form-group" style="width: 100%; padding: 10px; border: 2px solid var(--subtle); border-radius: 8px;">
+                            <option value="all">All Languages</option>
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="mandarin">Mandarin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Availability:</label>
+                        <select class="form-group" style="width: 100%; padding: 10px; border: 2px solid var(--subtle); border-radius: 8px;">
+                            <option value="all">All</option>
+                            <option value="accepting">Accepting New Clients</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem; text-align: center;">
+                    <button class="btn filter-btn" data-filter="all" style="margin: 0.5rem;">All Therapists</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="anxiety">Anxiety</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="depression">Depression</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="couples">Couples</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="family">Family</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="teens">Teens</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapist Cards Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid">
+                <!-- Therapist 1 -->
+                <div class="therapist-card" data-category="anxiety depression trauma">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=300&fit=crop&crop=face" alt="Dr. Sarah Johnson" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">Dr. Sarah Johnson</h3>
+                        <p class="therapist-credentials">PhD, LCSW</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LCSW-12345</p>
+                        <div class="specialty-tags">
+                            <span class="tag">Anxiety</span>
+                            <span class="tag">Depression</span>
+                            <span class="tag">Trauma</span>
+                            <span class="tag">PTSD</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 15 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> CBT, EMDR, Mindfulness-Based</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 2 -->
+                <div class="therapist-card" data-category="couples family relationships">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Michael Chen" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">Michael Chen</h3>
+                        <p class="therapist-credentials">LPC, LMFT</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LPC-67890</p>
+                        <div class="specialty-tags">
+                            <span class="tag">Couples</span>
+                            <span class="tag">Family</span>
+                            <span class="tag">Relationships</span>
+                            <span class="tag">Communication</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 12 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English, Mandarin</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> Solution-Focused, EFT, Family Systems</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 3 -->
+                <div class="therapist-card" data-category="teens children adhd behavior">
+                    <img src="https://images.unsplash.com/photo-1594824476968-48fd8d1e0b2e?w=300&h=300&fit=crop&crop=face" alt="Dr. Emily Rodriguez" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">Dr. Emily Rodriguez</h3>
+                        <p class="therapist-credentials">PsyD, LCPC</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LCPC-11111</p>
+                        <div class="specialty-tags">
+                            <span class="tag">Teens</span>
+                            <span class="tag">Children</span>
+                            <span class="tag">ADHD</span>
+                            <span class="tag">Behavior</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 10 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English, Spanish</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> Play Therapy, CBT, DBT</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 4 -->
+                <div class="therapist-card" data-category="anxiety depression stress">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=face" alt="Jennifer Williams" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">Jennifer Williams</h3>
+                        <p class="therapist-credentials">LCSW</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LCSW-22222</p>
+                        <div class="specialty-tags">
+                            <span class="tag">Anxiety</span>
+                            <span class="tag">Depression</span>
+                            <span class="tag">Stress</span>
+                            <span class="tag">Life Transitions</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 8 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> CBT, Mindfulness-Based, DBT</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 5 -->
+                <div class="therapist-card" data-category="addiction recovery substance">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face" alt="Robert Martinez" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">Robert Martinez</h3>
+                        <p class="therapist-credentials">LPC, CADC</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LPC-33333</p>
+                        <div class="specialty-tags">
+                            <span class="tag">Addiction</span>
+                            <span class="tag">Recovery</span>
+                            <span class="tag">Substance Use</span>
+                            <span class="tag">Relapse Prevention</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 14 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English, Spanish</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> Motivational Interviewing, CBT, 12-Step</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 6 -->
+                <div class="therapist-card" data-category="grief loss trauma">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face" alt="Patricia Brown" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">Patricia Brown</h3>
+                        <p class="therapist-credentials">LCSW</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LCSW-44444</p>
+                        <div class="specialty-tags">
+                            <span class="tag">Grief</span>
+                            <span class="tag">Loss</span>
+                            <span class="tag">Trauma</span>
+                            <span class="tag">EMDR</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 11 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> EMDR, Grief Counseling, Trauma-Informed</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 7 -->
+                <div class="therapist-card" data-category="eating disorders body image">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=300&h=300&fit=crop&crop=face" alt="Dr. Amanda Lee" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">Dr. Amanda Lee</h3>
+                        <p class="therapist-credentials">PhD, LCPC</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LCPC-55555</p>
+                        <div class="specialty-tags">
+                            <span class="tag">Eating Disorders</span>
+                            <span class="tag">Body Image</span>
+                            <span class="tag">Anxiety</span>
+                            <span class="tag">DBT</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 9 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> DBT, CBT-E, Family-Based Treatment</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 8 -->
+                <div class="therapist-card" data-category="ocd anxiety depression">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="David Kim" class="therapist-photo" loading="lazy">
+                    <div class="therapist-info">
+                        <h3 class="therapist-name">David Kim</h3>
+                        <p class="therapist-credentials">LPC</p>
+                        <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 1rem;">License: LPC-66666</p>
+                        <div class="specialty-tags">
+                            <span class="tag">OCD</span>
+                            <span class="tag">Anxiety</span>
+                            <span class="tag">Depression</span>
+                            <span class="tag">ERP</span>
+                        </div>
+                        <p style="margin: 1rem 0;"><strong>Experience:</strong> 7 years</p>
+                        <p style="margin-bottom: 1rem;"><strong>Languages:</strong> English, Korean</p>
+                        <p style="margin-bottom: 1rem;"><strong>Approach:</strong> ERP, CBT, Exposure Therapy</p>
+                        <span class="accepting-badge">Accepting New Clients</span>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <a href="therapist-profile.html" class="btn btn-secondary" style="flex: 1; padding: 10px;">View Profile</a>
+                            <a href="contact.html" class="btn" style="flex: 1; padding: 10px;">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Photo -->
+    <section class="section watercolor-bg">
+        <div class="container">
+            <div class="card" style="text-align: center;">
+                <h2>We're Here for You</h2>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&h=400&fit=crop" alt="Our Team" style="border-radius: 15px; margin: 2rem 0;" loading="lazy">
+                <p style="font-size: 1.1rem;">Our diverse team of licensed professionals is committed to providing compassionate, evidence-based care. We work collaboratively to ensure you receive the best possible support on your journey to wellness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Healing Minds Counseling is dedicated to providing compassionate, evidence-based mental health services to individuals, couples, and families in our community.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="therapists.html">Therapists</a></li>
+                    <li><a href="resources.html">FAQs</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="resources.html">Crisis Lines</a></li>
+                    <li><a href="resources.html">Support Groups</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+                <div class="crisis-resources">
+                    <h4>In Crisis?</h4>
+                    <p>National Suicide Prevention: <a href="tel:988">988</a></p>
+                    <p>Crisis Text Line: Text HOME to <a href="sms:741741">741741</a></p>
+                    <p>SAMHSA Helpline: <a href="tel:18006624357">1-800-662-4357</a></p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>123 Wellness Street<br>City, State 12345</p>
+                <p>Phone: <a href="tel:(555)123-4567">(555) 123-4567</a></p>
+                <p>Email: <a href="mailto:info@healingminds.com">info@healingminds.com</a></p>
+                <p>Hours: Mon-Fri 9am-7pm<br>Sat 10am-4pm</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healing Minds Counseling. All rights reserved. | HIPAA Compliant</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
